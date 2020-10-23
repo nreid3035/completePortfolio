@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--1. Create a page layout using flexbox.
+2. Implement appropriate media queries for responsive design.
+3. Utilize semantic, valid markup
+4. Build your page from scratch (no template usage)
+5. Use Responsive Navigation
+6. Code a functional Contact form-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Complete Portfolio</title>
+</head>
+<body>
+  <header>
+      <h1>Nicholas Reid</h1>
+      <nav>
+          <ul class="nav-list">
+              <a href="#home"><li>Home</li></a>
+              <a href="#about"><li>About</li></a>
+              <a href="#portfolio"><li>Portfolio</li></a>
+              <a href="#contact"><li>Contact</li></a>
+          </ul>
+      </nav>
+  </header>
+  <main>
+    <div class="img-container">
+      <img src="./images/portfolio-pic.PNG" alt="profile-image">
+    </div>
+      <!--intro section
+1. who you are
+2. where you are
+3. what you do that makes you special-->
+      <div id=intro>
+          <h2>Introduction</h2>
+          <p>Hello! My name is Nicholas Reid. I am an aspiring web 
+              developer out of Poughkeepsie, NY. My work ethic, focus, attention to detail, 
+              and interpersonal skills set me apart as someone who can do more than just know 
+              how to talk to the computer.
+          </p>
+      </div>
+      <hr>
+      <!--about me section
+1. demonstrate passion for the web
+2. demonstrate desire to work on a team
+3. show outside personality
+4. list of services-->
+      <div id="about">
+        <h2>About Nicholas</h2>
+        <p>Being born in 1996 I feel like I grew up very harmoniously with the web. 
+            I wasn't engulfed in it, I was just as comfortable riding my bike to school every day 
+            as I was coming home and being able to use old school messaging services like AIM. 
+            I have watched the web grow more exponentially than my classmates though, into an endless sea of possibilities 
+            that has shifted my perspective about where my education should be centered. Throughout my academic career 
+            I have always been very math oriented. I felt like I could just see the variables changing and the problems being 
+            solved in front of my eyes, it came very natural to me. I pursued physics because it was a very scientific 
+            application of math but that interest never sparked a passion in me. I came across web development a couple of years 
+            ago and I dabbled in trying to teach myself HTML and CSS. Shortly after I found JavaScript and I felt that same 
+            satisfaction solving those problems that I would get in math class. The difference is that I can use web development as 
+            a tool, unlike math, to truly tap into my creativity in a way I have yet to match. This is why I invested in myself and 
+            am taking the Bloc program. So that I can have the proper skills to pursue this newfound passion. I look forward to being 
+            able to work underneath great programmers that have started this jouney long before me. Mentorship is one of the most useful 
+            tools for learning in my opinion and was one of the main reasons I chose the Bloc program.</p>
+
+        <p>Moving into the first stage of my career these are the kind of jobs and services I am available for:</p>
+        <ul id="services-list">
+            <li>Working at a company in an entry level position with growth capablilities</li>
+            <li>Working with small local buisnesses to help them develop a reliable web presense affordablly</li>
+            <li>Working with non-profit organizations and charities pro-bono to help bring good causes onto public platforms</li>
+        </ul>
+      </div>
+      
+      <!--project section
+1. project title
+2. project description
+3. link to project-->
+      <div id="portfolio">
+<h2>Portfolio</h2>
+        <div id="project-container">
+          <div class="project">
+            <h3>Project Title</h3>
+            <p>This is where the description of the project goes</p>
+            <a href="">Link to project</a>
+          </div>
+
+          <div class="project">
+            <h3>Project Title</h3>
+            <p>This is where the description of the project goes</p>
+            <a href="">Link to project</a>
+          </div>
+          
+          <div class="project">
+            <h3>Project Title</h3>
+            <p>This is where the description of the project goes</p>
+            <a href="">Link to project</a>
+          </div>
+        </div>
+      </div>
+      <!--contact section
+1. email address
+2. link to github
+3. link to linkedIn
+4. functional contact form
+      -->
+      <h2>Contact Nicholas</h2>
+      <div id="contact">
+        <div id="contact-links">
+          <a href="mailto:nreid3035@gmail.com" >nreid3035@gmail.com</a>
+          <a href="https://github.com/nreid3035" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/nicholas-reid-6171b61b8/" target="_blank">LinkedIn</a>
+        </div>
+        <form action="https://formspree.io/nreid3035@gmail.com" method="POST">
+            <label for="name" class="label-spacing">Name:</label>
+            <input type="text" name="name" id="name" required class="input-spacing">
+            <label for="email" class="label-spacing">Email:</label>
+            <input type="text" name="email" id="email" required class="input-spacing">
+            <label for="message" class="label-spacing">Your Message:</label>
+            <textarea id="message" class="input-spacing" required></textarea>
+            <input type="submit" value="Submit" class="input-spacing">
+        </form>
+      </div>
+  </main>
+  <footer>
+      <h3>Copyright</h3>
+  </footer>
+  <script></script>
+</body>
+</html>

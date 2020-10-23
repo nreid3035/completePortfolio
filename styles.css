@@ -1,0 +1,115 @@
+/*Color Scheme
+1. Primary: #FCF5C7 (eggshell)
+2. Secondary: #ADF7B6 (light green)
+3. Third Color: #E4DFDAS*/
+@media all and (min-width: 600px) {
+    .img-container {
+      width: 40%;
+    }
+    p {
+        font-size: 18px;
+    }
+    #project-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        
+    }
+    #portfolio {
+        height: 50vh;
+        background-color: #ADF7B6;
+        padding: 10px 0px;
+    }
+}
+/*header styles*/
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 20px;
+    background-color: #ADF7B6;
+}
+header h1 {
+    align-self: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav {
+    width: 100%;
+}
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+li {
+    margin: 10px;
+}
+
+/*Main CSS*/
+hr {
+    width: 100%;
+    height: auto;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    background-color: #FCF5C7;
+}
+.img-container {
+    width: 80%;
+    align-self: center;
+    margin: 15px;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+h2, h3 {
+    margin: 10px;  
+    font-family: 'Times New Roman', Times, serif;
+
+}
+p, a {
+    margin: 10px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border: solid 2px black;
+    padding: 5px;
+    margin: 8px;
+}
+
+#contact-links {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.input-spacing {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #ADF7B6;
+    height: 44px;
+}
+
